@@ -777,8 +777,8 @@ namespace UniRate {
         private void LogRenderIntervalNotSupportedOnce() {
             if (this._loggedRenderIntervalNotSupported) return;
             this._loggedRenderIntervalNotSupported = true;
-            if (Debugger.IsLogLevelActive(LogLevel.Warning)) {
-                Debugger.Log(LogLevel.Warning, $"render interval is only supported on Unity 2019.3 or newer");
+            if (RateDebug.IsLogLevelActive(RateLogLevel.Warning)) {
+                RateDebug.Log(RateLogLevel.Warning, $"render interval is only supported on Unity 2019.3 or newer");
             }
         }
         
